@@ -61,7 +61,9 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div
+            class="col-lg-4 d-flex justify-content-md-center justify-content-lg-start"
+          >
             <img
               src="images/iphone6.png"
               alt="iphone-mockup"
@@ -78,24 +80,24 @@
         class="container-fluid d-flex justify-content-center align-items-center"
       >
         <div
-          class="row-fluid d-flex flex-sm-column flex-lg-row justify-content-between col-12"
+          class="row-fluid d-flex flex-column flex-lg-row justify-content-between col-12"
         >
           <div
-            class="col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-sm-5 my-lg-0"
+            class="col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-5 my-lg-0"
           >
             <i class="fa-solid fa-circle-check fa-6x mb-4"></i>
             <h3>Easy to use.</h3>
             <p>So easy to use, even your dog could do it.</p>
           </div>
           <div
-            class="col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-sm-5 my-lg-0"
+            class="col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-5 my-lg-0"
           >
             <i class="fa-solid fa-bullseye fa-6x mb-4"></i>
             <h3>Elite Clientele</h3>
             <p>We have all the dogs, the greatest dogs.</p>
           </div>
           <div
-            class="col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-sm-5 my-lg-0"
+            class="col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-5 my-lg-0"
           >
             <i class="fa-solid fa-heart fa-6x mb-4"></i>
             <h3>Guaranteed to work.</h3>
@@ -110,8 +112,12 @@
         id="testimonials"
         class="container-fluid d-flex justify-content-between align-items-center flex-column"
       >
-        <article id="comments" class="row-fluid my-lg-auto my-sm-5">
-          <div id="testimonials-carousel" class="carousel slide" data-ride="false">
+        <article id="comments" class="row-fluid my-lg-auto my-5">
+          <div
+            id="testimonials-carousel"
+            class="carousel slide"
+            data-ride="false"
+          >
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <h2 class="col-12 text-center">
@@ -127,7 +133,8 @@
               </div>
               <div class="carousel-item">
                 <h2 class="col-12 text-center">
-                  My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.
+                  My dog used to be so lonely, but with TinDog's help, they've
+                  found the love of their life. I think.
                 </h2>
                 <div
                   class="col-12 d-flex justify-content-center align-items-center"
@@ -166,53 +173,129 @@
 
         <article
           id="press"
-          class="row d-flex justify-content-between align-items-center mb-5 col-lg-8 col-sm-12"
+          class="row d-flex justify-content-between align-items-center mb-5 col-lg-8 col-12"
         >
           <img src="images/TechCrunch.png" alt="tc-logo" class="col m-3" />
           <img src="images/tnw.png" alt="tnw-logo" class="col m-3" />
-          <img src="images/bizinsider.png" alt="biz-insider-logo" class="col m-3" />
+          <img
+            src="images/bizinsider.png"
+            alt="biz-insider-logo"
+            class="col m-3"
+          />
           <img src="images/mashable.png" alt="mashable-logo" class="col m-3" />
         </article>
       </section>
 
       <!-- Pricing -->
 
-      <section id="pricing">
-        <h2>A Plan for Every Dog's Needs</h2>
-        <p>Simple and affordable price plans for your and your dog.</p>
+      <section
+        id="pricing"
+        class="container-fluid d-flex flex-column justify-content-between"
+      >
+        <h2 class="mt-5 fs-1">A Plan for Every Dog's Needs</h2>
+        <p class="mb-5">
+          Simple and affordable price plans for your and your dog.
+        </p>
 
-        <h3>Chihuahua</h3>
-        <h2>Free</h2>
-        <p>5 Matches Per Day</p>
-        <p>10 Messages Per Day</p>
-        <p>Unlimited App Usage</p>
-        <button type="button">Sign Up</button>
+        <div class="row row-cols-1 row-cols-lg-3 my-auto text-center">
+          <!-- Chihuahua -->
 
-        <h3>Labrador</h3>
-        <h2>$49 / mo</h2>
-        <p>Unlimited Matches</p>
-        <p>Unlimited Messages</p>
-        <p>Unlimited App Usage</p>
-        <button type="button">Sign Up</button>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-bold">Chihuahua</h4>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h1 class="card-title pricing-card-title">Free</h1>
+                <ul class="list-unstyled lh-lg mt-3 mb-4">
+                  <li class="text-muted">5 Matches Per Day</li>
+                  <li class="text-muted">10 Messages Per Day</li>
+                  <li class="text-muted">Unlimited App Usage</li>
+                </ul>
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-outline-dark mb-4"
+                >
+                  Sign up
+                </button>
+              </div>
+            </div>
+          </div>
 
-        <h3>Mastiff</h3>
-        <h2>$99 / mo</h2>
-        <p>Pirority Listing</p>
-        <p>Unlimited Matches</p>
-        <p>Unlimited Messages</p>
-        <p>Unlimited App Usage</p>
-        <button type="button">Sign Up</button>
+          <!-- Labrador -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-bold">Labrador</h4>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h1 class="card-title pricing-card-title">
+                  $49<small class="text-muted fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled lh-lg mt-3 mb-4">
+                  <li class="text-muted">Unlimited Matches</li>
+                  <li class="text-muted">Unlimited Messages</li>
+                  <li class="text-muted">Unlimited App Usage</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-dark mb-4">
+                  Sign up
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mastiff -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card h-100 mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-bold">Mastiff</h4>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h1 class="card-title pricing-card-title">
+                  $99<small class="text-muted fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled lh-lg mt-3 mb-4">
+                  <li class="text-muted">Priority Listing</li>
+                  <li class="text-muted">Unlimited Matches</li>
+                  <li class="text-muted">Unlimited Messages</li>
+                  <li class="text-muted">Unlimited App Usage</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-dark mb-4">
+                  Sign up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Call to Action -->
 
-      <section id="cta">
-        <h3>Find the True Love of Your Dog's Life Today.</h3>
-        <button type="button">Download</button>
-        <button type="button">Download</button>
+      <section id="cta" class="d-flex flex-column justify-content-between">
+        <article
+          class="container-fluid d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 class="my-5 text-center">Find the True Love of Your Dog's Life Today.</h3>
+          <div
+            class="d-flex justify-content-sm-center justify-content-lg-start mb-5"
+          >
+            <button type="button" class="btn btn-dark btn-lg mx-3">
+              <i class="fa-brands fa-apple"></i> Download
+            </button>
+            <button type="button" class="btn btn-outline-light btn-lg">
+              <i class="fa-brands fa-google-play"></i> Download
+            </button>
+          </div>
+        </article>
         <!-- Footer -->
-        <footer id="footer">
-          <p>© Copyright TinDog</p>
+        <footer id="footer" class="container-fluid d-flex flex-column align-items-center justify-content-center py-5">
+          <div class="d-flex justify-content-center">
+            <i class="fa-brands fa-twitter fa-lg mx-3"></i>
+            <i class="fa-brands fa-facebook-f fa-lg mx-3"></i>
+            <i class="fa-brands fa-instagram fa-lg mx-3"></i>
+            <i class="fa-solid fa-envelope fa-lg mx-3"></i>
+          </div>
+          <p class="text-muted center mt-5">© Copyright TinDog</p>
         </footer>
       </section>
     </div>

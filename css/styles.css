@@ -4,6 +4,10 @@
   --animate-delay: 0.2s;
 }
 
+html {
+    background-color: #fff;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
@@ -70,17 +74,23 @@ section {
 
     /* dl buttons */
     #title .btn {
-    margin: 5% 3% 5% 0;
+        margin: 5% 3% 5% 0;
     }
 
     /* title image */
     #title img {
-    transform: rotate(30deg);
+        transform: rotate(30deg);
     }
+
+    @media only screen and (max-width: 992px) {
+        #title img {
+            transform: rotate(0deg);
+        }
+      }
 
     /* title header */
     #title h1 {
-    margin-top: 10%;
+        margin-top: 10%;
     }
 
 /* features */
@@ -97,9 +107,10 @@ section {
   color: #ef8172;
   transition: color 0.2s;
 }
-#features i:hover {
-  color: #ff4c68;
-}
+
+    #features i:hover {
+    color: #ff4c68;
+    }
 
 #features > .row div {
   min-height: 33vh;
@@ -114,9 +125,9 @@ section {
 }
 
     #testimonials h2 {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 1.5;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.5;
     }
 
     #testimonials #comments img {
@@ -132,3 +143,39 @@ section {
     #press {
         padding: 0 8%;
     }
+    
+
+/* pricing */
+#pricing h2 {
+    font-weight: 900;
+}
+
+/* cta */
+#cta article{
+    background-color: #ff4c68;
+    color: white;
+    height: 70vh;
+}
+
+    #cta article h3 {
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 1.5;
+    }
+
+#cta footer {
+    background-color: #fff;
+    height: 30vh;
+ }
+
+    #cta footer i:hover {
+        color: #8f8f8f;
+        cursor: pointer;
+    }
+
+
+ @media only screen and (max-width: 992px) {
+    #cta article, #cta footer{
+        height: initial;
+    }
+  }

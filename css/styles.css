@@ -110,6 +110,7 @@ section {
 #testimonials {
   background-color: #ef8172;
   color: white;
+  padding: 0;
 }
 
     #testimonials h2 {
@@ -124,6 +125,10 @@ section {
         width: 10%;
     }
 
-    .carousel-control-next, .carousel-control-prev {
-        width: auto;
+    .carousel-item {
+        padding: 3% 15%;
+    }
+
+    #press {
+        padding: 0 8%;
     }

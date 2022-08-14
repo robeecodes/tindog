@@ -145,7 +145,7 @@ section {
     }
     
     #press img {
-        max-width: 25vw;
+        width: 25vw;
     }
 
 /* pricing */
